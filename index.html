@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firstlyo Eilen Rizqulloh | 3D Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- 3D Floating Particles -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-3d-text">
+                <span>F</span><span>E</span><span>R</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill" id="loaderFill"></div>
+            </div>
+            <p class="loader-text">Loading Experience...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-3d" data-text="FER">FER</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-3d-scene" id="hero3dScene">
+                <div class="hero-3d-card" id="hero3dCard">
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="profile-3d-container">
+                            <div class="profile-3d" id="profile3d">
+                                <div class="profile-ring ring-1"></div>
+                                <div class="profile-ring ring-2"></div>
+                                <div class="profile-ring ring-3"></div>
+                                <div class="profile-image-wrapper">
+                                    <img src="" alt="Profile" id="profileImage" class="profile-img">
+                                    <div class="profile-placeholder" id="profilePlaceholder">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="profile-upload-btn" id="profileUploadBtn">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-text-3d">
+                            <p class="hero-subtitle">
+                                <span class="typing-text" id="typingText"></span>
+                                <span class="cursor-blink">|</span>
+                            </p>
+                            <h1 class="hero-title">
+                                <span class="title-line">FIRSTLYO</span>
+                                <span class="title-line accent">EILEN</span>
+                                <span class="title-line">RIZQULLOH</span>
+                            </h1>
+                            <p class="hero-description">Creative Developer & Designer crafting immersive digital experiences with cutting-edge technology.</p>
+                            <div class="hero-buttons">
+                                <a href="#projects" class="btn-3d btn-primary">
+                                    <span class="btn-text">View Projects</span>
+                                    <span class="btn-glow"></span>
+                                </a>
+                                <a href="#contact" class="btn-3d btn-secondary">
+                                    <span class="btn-text">Contact Me</span>
+                                    <span class="btn-glow"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating 3D Elements -->
+            <div class="floating-elements">
+                <div class="float-shape shape-1" data-speed="2"><i class="fab fa-html5"></i></div>
+                <div class="float-shape shape-2" data-speed="3"><i class="fab fa-css3-alt"></i></div>
+                <div class="float-shape shape-3" data-speed="1.5"><i class="fab fa-js-square"></i></div>
+                <div class="float-shape shape-4" data-speed="2.5"><i class="fab fa-react"></i></div>
+                <div class="float-shape shape-5" data-speed="2"><i class="fab fa-node-js"></i></div>
+                <div class="float-shape shape-6" data-speed="3.5"><i class="fab fa-python"></i></div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="section-header">
+            <span class="section-tag">01 — ABOUT</span>
+            <h2 class="section-title">Who Am I?</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-3d-card" id="about3dCard">
+                <div class="about-image-side">
+                    <div class="about-image-frame">
+                        <div class="frame-corner tl"></div>
+                        <div class="frame-corner tr"></div>
+                        <div class="frame-corner bl"></div>
+                        <div class="frame-corner br"></div>
+                        <img src="" alt="About" id="aboutImage" class="about-img">
+                        <div class="about-img-placeholder" id="aboutImgPlaceholder">
+                            <i class="fas fa-image"></i>
+                            <p>Upload Image</p>
+                        </div>
+                        <button class="upload-btn" id="aboutUploadBtn">
+                            <i class="fas fa-upload"></i> Upload
+                        </button>
+                    </div>
+                </div>
+                <div class="about-text-side">
+                    <h3>Creative Developer & Digital Artist</h3>
+                    <p>Saya adalah <strong>Firstlyo Eilen Rizqulloh</strong>, seorang developer kreatif yang passionate dalam menciptakan pengalaman digital yang memukau. Dengan keahlian di bidang web development, UI/UX design, dan 3D visualization, saya selalu berusaha mendorong batas kreativitas.</p>
+                    <p>Fokus utama saya adalah membangun website modern dengan teknologi terkini, animasi yang smooth, dan interaksi yang engaging. Setiap project adalah kesempatan untuk berinovasi.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="30">0</span>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="99">0</span>
+                            <span class="stat-label">Satisfaction %</span>
+                        </div>
+                    </div>
+                    <div class="about-info-grid">
+                        <div class="info-item"><span class="info-label">Name:</span><span class="info-value">Firstlyo Eilen Rizqulloh</span></div>
+                        <div class="info-item"><span class="info-label">Email:</span><span class="info-value">firstlyo@email.com</span></div>
+                        <div class="info-item"><span class="info-label">Location:</span><span class="info-value">Indonesia</span></div>
+                        <div class="info-item"><span class="info-label">Status:</span><span class="info-value available">Available</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="section-header">
+            <span class="section-tag">02 — SKILLS</span>
+            <h2 class="section-title">My Expertise</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-3d-wrapper" id="skills3dWrapper">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-header"><span>HTML5</span><span>95%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-header"><span>CSS3 / SASS</span><span>90%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="88">
+                            <div class="skill-header"><span>JavaScript</span><span>88%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-header"><span>React.js</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-header"><span>Three.js</span><span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-header"><span>Node.js</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="82">
+                            <div class="skill-header"><span>Python</span><span>82%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 82%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="78">
+                            <div class="skill-header"><span>PHP / Laravel</span><span>78%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 78%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-header"><span>MySQL / MongoDB</span><span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <div class="skill-header"><span>REST API</span><span>75%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-header"><span>Figma</span><span>90%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-header"><span>Adobe Photoshop</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-header"><span>Blender 3D</span><span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="88">
+                            <div class="skill-header"><span>UI/UX Design</span><span>88%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <div class="skill-header"><span>Motion Design</span><span>75%</span></div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (CRUD) -->
+    <section class="projects section" id="projects">
+        <div class="section-header">
+            <span class="section-tag">03 — PROJECTS</span>
+            <h2 class="section-title">My Works</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <!-- Add Project Button -->
+        <div class="projects-controls">
+            <button class="btn-3d btn-add" id="addProjectBtn">
+                <i class="fas fa-plus"></i>
+                <span>Add Project</span>
+            </button>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Projects will be rendered here by JavaScript -->
+        </div>
+
+        <!-- Add/Edit Project Modal -->
+        <div class="modal-overlay" id="projectModal">
+            <div class="modal-content modal-3d">
+                <div class="modal-header">
+                    <h3 id="modalTitle">Add New Project</h3>
+                    <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+                </div>
+                <form class="modal-form" id="projectForm">
+                    <input type="hidden" id="projectId">
+                    <div class="form-group">
+                        <label><i class="fas fa-heading"></i> Project Title</label>
+                        <input type="text" id="projectTitle" placeholder="Enter project title" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-align-left"></i> Description</label>
+                        <textarea id="projectDesc" placeholder="Describe your project..." rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-tags"></i> Category</label>
+                        <select id="projectCategory" required>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile App</option>
+                            <option value="design">UI/UX Design</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-link"></i> Technologies</label>
+                        <input type="text" id="projectTech" placeholder="e.g., HTML, CSS, JavaScript" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-link"></i> Project URL</label>
+                        <input type="url" id="projectUrl" placeholder="https://yourproject.com">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-image"></i> Project Image</label>
+                        <div class="image-upload-area" id="imageUploadArea">
+                            <input type="file" id="projectImage" accept="image/*" hidden>
+                            <div class="upload-placeholder" id="uploadPlaceholder">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Click or drag image here</p>
+                                <span class="upload-hint">PNG, JPG, GIF up to 5MB</span>
+                            </div>
+                            <div class="image-preview" id="imagePreview" style="display:none">
+                                <img src="home.img" alt="Preview" id="previewImg">
+                                <button type="button" class="remove-image" id="removeImage"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-3d btn-cancel" id="cancelBtn">Cancel</button>
+                        <button type="submit" class="btn-3d btn-save">
+                            <span id="saveBtnText">Save Project</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="section-header">
+            <span class="section-tag">04 — GALLERY</span>
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="gallery-controls">
+            <button class="btn-3d btn-add" id="addGalleryBtn">
+                <i class="fas fa-plus"></i>
+                <span>Upload Photo</span>
+            </button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Gallery items rendered by JS -->
+        </div>
+
+        <!-- Gallery Upload Modal -->
+        <div class="modal-overlay" id="galleryModal">
+            <div class="modal-content modal-3d">
+                <div class="modal-header">
+                    <h3>Upload Gallery Photo</h3>
+                    <button class="modal-close" id="galleryModalClose"><i class="fas fa-times"></i></button>
+                </div>
+                <form class="modal-form" id="galleryForm">
+                    <input type="hidden" id="galleryId">
+                    <div class="form-group">
+                        <label><i class="fas fa-heading"></i> Photo Title</label>
+                        <input type="text" id="galleryTitle" placeholder="Enter photo title" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-align-left"></i> Description</label>
+                        <textarea id="galleryDesc" placeholder="Describe this photo..." rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-image"></i> Photo</label>
+                        <div class="image-upload-area" id="galleryUploadArea">
+                            <input type="file" id="galleryImage" accept="image/*" hidden>
+                            <div class="upload-placeholder" id="galleryUploadPlaceholder">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Click or drag photo here</p>
+                                <span class="upload-hint">PNG, JPG, GIF up to 5MB</span>
+                            </div>
+                            <div class="image-preview" id="galleryImagePreview" style="display:none">
+                                <img src="home.png" alt="Preview" id="galleryPreviewImg">
+                                <button type="button" class="remove-image" id="removeGalleryImage"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-3d btn-cancel" id="cancelGalleryBtn">Cancel</button>
+                        <button type="submit" class="btn-3d btn-save">Upload Photo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+            <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+            <div class="lightbox-content">
+                <img src="home.png" alt="Gallery" id="lightboxImg">
+                <div class="lightbox-info">
+                    <h4 id="lightboxTitle"></h4>
+                    <p id="lightboxDesc"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="section-header">
+            <span class="section-tag">05 — CONTACT</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info-3d" id="contact3dCard">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>Punya project menarik? Mari diskusikan dan wujudkan bersama!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">firstlyo@email.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+62 812-xxxx-xxxx</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" data-tooltip="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Email</label>
+                            <input type="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Project Discussion" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-3d btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-3d" data-text="FER">FER</span>
+            </div>
+            <p class="footer-text">© 2026 Firstlyo Eilen Rizqulloh. All Rights Reserved.</p>
+            <p class="footer-sub">Crafted with <i class="fas fa-heart"></i> & Innovation</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
